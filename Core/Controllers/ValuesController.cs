@@ -6,7 +6,7 @@ using AspNet.Security.OAuth.Validation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace datahound.Controllers
+namespace Core.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller

@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using datahound.Authorization.Interfaces;
+using Core.Authorization.Interfaces;
 using Microsoft.AspNetCore.Identity;
 
-namespace datahound.Authorization.Models
+namespace Core.Authorization.Models
 {
     public class ApplicationRole: IdentityRole, IAuditableEntity
     {

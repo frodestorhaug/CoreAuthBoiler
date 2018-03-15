@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/datahound/datahound.csproj"
+                "${workspaceFolder}/Core/Core.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

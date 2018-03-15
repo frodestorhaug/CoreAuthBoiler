@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using AspNet.Security.OAuth.Validation;
 using AspNet.Security.OpenIdConnect.Primitives;
-using datahound.Authorization.Models;
+using Core.Authorization.Models;
 using Domain.Helpers;
 using Domain.Models;
 using Microsoft.AspNetCore.Builder;
@@ -13,7 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 
-namespace datahound
+namespace Core
 {
     public class Startup
     {
@@ -30,7 +30,7 @@ namespace datahound
         {
             services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("datahound"));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("Core"));
                 options.UseOpenIddict();
             });
 
@@ -98,7 +98,7 @@ namespace datahound
                 .AddOAuthValidation();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "MartonAds API", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "CoreAuthBoiler API", Version = "v1" });
                 c.OperationFilter<AuthorizationHeaderParameterOperationFilter>();
             });
 

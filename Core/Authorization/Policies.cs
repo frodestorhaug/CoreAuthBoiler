@@ -1,4 +1,4 @@
-namespace datahound.Authorization
+namespace Core.Authorization
 {
     public class Policies
     {

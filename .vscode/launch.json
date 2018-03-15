@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/datahound/bin/Debug/netcoreapp2.0/datahound.dll",
+            "program": "${workspaceFolder}/Core/bin/Debug/netcoreapp2.0/Core.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/datahound",
+            "cwd": "${workspaceFolder}/Core",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {

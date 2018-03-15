@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using AspNet.Security.OpenIdConnect.Primitives;
 using Microsoft.AspNetCore.Authorization;
 
-namespace datahound.Authorization
+namespace Core.Authorization
 {
     public class UserAccountAuthorizationHandler : AuthorizationHandler<UserAccountAuthorizationRequirement>
     {

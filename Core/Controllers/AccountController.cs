@@ -4,16 +4,17 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using AspNet.Security.OAuth.Validation;
-using datahound.Authorization.Models;
+using Core.Authorization.Models;
 using Domain.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace datahound.Controllers
+namespace Core.Controllers
 {
     [Authorize]
+    [Route("api/[controller]")]
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;

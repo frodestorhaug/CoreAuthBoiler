@@ -1,6 +1,6 @@
 using System;
 
-namespace datahound.Authorization.Interfaces
+namespace Core.Authorization.Interfaces
 {
     public interface IAuditableEntity
     {

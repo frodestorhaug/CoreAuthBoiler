@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace datahound.Authorization.Models
+namespace Core.Authorization.Models
 {
     public class CustomClaimTypes
     {
-        public const string Permission = "datahound/permission";
+        public const string Permission = "Core/permission";
     }
 
     public static class Users

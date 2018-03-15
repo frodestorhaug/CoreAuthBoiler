@@ -8,8 +8,7 @@ namespace Domain.Models
         public ApplicationDbContext(DbContextOptions options)
             : base(options) { }
 
-        public DbSet<Dog> Dogs { get; set; }
-
+       
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

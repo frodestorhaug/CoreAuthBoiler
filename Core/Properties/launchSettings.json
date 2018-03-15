@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "datahound": {
+    "Core": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",

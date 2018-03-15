@@ -14,7 +14,7 @@ using Microsoft.Extensions.Options;
 using OpenIddict.Core;
 using SignInResult = Microsoft.AspNetCore.Mvc.SignInResult;
 
-namespace datahound.Controllers
+namespace Core.Controllers
 {
     public class AuthorizationController : Controller
     {
