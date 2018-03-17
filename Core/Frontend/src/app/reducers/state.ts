@@ -1,11 +1,11 @@
-import { TodoModel } from 'app/models';
+import { DemoModel } from 'app/models';
 import { RouterState } from 'react-router-redux';
 
 export interface RootState {
-  todos: RootState.TodoState;
+  demo: RootState.DemoState;
   router: RouterState
 }
 
 export namespace RootState {
-  export type TodoState = TodoModel[];
+  export type DemoState = DemoModel[];
 }
